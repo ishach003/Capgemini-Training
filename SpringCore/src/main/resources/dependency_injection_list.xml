@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="B1" class="di.Book">
+        <property name="bookId" value="1"/>
+        <property name="bookName" value="Lord of rings"/>
+    </bean>
+    <bean id="B2" class="di.Book">
+        <property name="bookId" value="2"/>
+        <property name="bookName" value="harry potter"/>
+    </bean>
+    <bean id="B3" class="di.Book">
+        <property name="bookId" value="3"/>
+        <property name="bookName" value="alice in botherland"/>
+    </bean>
+    <bean id="L1" class="di.Library1">
+        <property name="id" value="101"/>
+        <property name="name" value="mystery"/>
+        <property name="books">
+            <list>
+                <ref bean ="B1"/>
+                <ref bean ="B2"/>
+                <ref bean ="B3"/>
+            </list>
+        </property>
+    </bean>
+    <!--    <bean id="bean" class="IOCwithXml.Koala"/>-->
+</beans>

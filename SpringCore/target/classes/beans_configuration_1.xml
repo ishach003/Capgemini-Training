@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="bean_id1" class="iocwithxml.Koala">
+        <property name="id" value="1"/>
+        <property name="name" value="choco"/>
+        <property name="age" value="3"/>
+        <property name="habitat" value="kukrail jungle"/>
+        <property name="weight" value="9"/>
+    </bean>
+    <bean id="bean_id2" class="iocwithxml.Koala">
+        <property name="id" value="2"/>
+        <property name="name" value="poko"/>
+        <property name="age" value="4"/>
+        <property name="habitat" value="kukrail jungle"/>
+        <property name="weight" value="7.5"/>
+    </bean>
+    <!--    <bean id="bean" class="IOCwithXml.Koala"/>-->
+</beans>
